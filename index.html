@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullah Shafi Bin Nahid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!-- Starfield Canvas -->
+<canvas id="stars"></canvas>
+
+<!-- Cursor glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header id="header">
+  <div class="logo">
+    <span class="logo-bracket">&lt;</span>Shafi<span class="logo-bracket">/&gt;</span>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#awards">Awards</a>
+    <a href="#projects">Projects</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home" onclick="closeMobileNav()">Home</a>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#awards" onclick="closeMobileNav()">Awards</a>
+  <a href="#projects" onclick="closeMobileNav()">Projects</a>
+  <a href="#blogs" onclick="closeMobileNav()">Blogs</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<section id="home" class="hero">
+  <div class="hero-text">
+    <div class="hero-tag">// grade 7 · Bangladesh 🇧🇩</div>
+    <h1>Hi, I'm <span class="name-glow">Shafi</span></h1>
+    <h2 class="typing-wrap"><span id="typing"></span><span class="cursor-blink">|</span></h2>
+    <p class="hero-desc">Scientist. Mathematician. Coder. Dreamer.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="scrollToSection('contact')">Get in Touch</button>
+      <button class="btn-outline" onclick="scrollToSection('awards')">My Awards</button>
+    </div>
+  </div>
+  <div class="hero-img">
+    <div class="img-ring"></div>
+    <img src="shafi.jpg" alt="Abdullah Shafi Bin Nahid">
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section id="about" class="about-section reveal">
+  <div class="about-inner glass">
+    <div class="about-label">// about me</div>
+    <h2>Who Am I?</h2>
+    <p>
+      My name is <strong>Abdullah Shafi Bin Nahid</strong> and I am currently a 7th grade student from Bangladesh.
+      I am a little scientist who explores astronomy & astrophysics, mathematics, AI, chemistry, physics, and biology.
+      My hobby is solving mathematical problems and writing code. I am learning ML and Deep Learning — the frontiers of AI.
+    </p>
+    <div class="about-tags">
+      <span>🔭 Astronomy</span>
+      <span>⚛️ Physics</span>
+      <span>📐 Mathematics</span>
+      <span>🤖 AI / ML</span>
+      <span>🧪 Chemistry</span>
+      <span>💻 Coding</span>
+    </div>
+  </div>
+</section>
+
+<section id="awards" class="reveal">
+  <div class="section-label">// achievements</div>
+  <h2 class="section-title">🏆 My Awards</h2>
+  <div class="awards-grid">
+    <div class="award-card">
+      <div class="award-icon">🥇</div>
+      <h3>Bangladesh Junior Science Olympiad</h3>
+      <p>National round winner — Junior Category<br>National Camper</p>
+    </div>
+    <div class="award-card">
+      <div class="award-icon">🥈</div>
+      <h3>Bangladesh Mathematical Olympiad</h3>
+      <p>1st Runner Up — National Round (Primary)<br>Honourable Mention — National Round (Junior)</p>
+    </div>
+    <div class="award-card">
+      <div class="award-icon">🌌</div>
+      <h3>Bangladesh Olympiad on Astronomy & Astrophysics</h3>
+      <p>12th at National Round — Junior Category</p>
+    </div>
+    <div class="award-card">
+      <div class="award-icon">🥉</div>
+      <h3>Apex Astro Olympiad</h3>
+      <p>3rd at National Round — Junior Category</p>
+    </div>
+    <div class="award-card highlight-card">
+      <div class="award-icon">🥇</div>
+      <h3>Bangladesh Physics Olympiad</h3>
+      <p>1st at National Round — A Category</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section id="projects" class="reveal">
+  <div class="section-label">// what i'm working on</div>
+  <h2 class="section-title">Projects</h2>
+  <p class="section-sub">Ongoing explorations and completed work. Want to collaborate? <a href="#contact">Contact me.</a></p>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-tag">Mathematics</div>
+      <h3>Twin Prime Conjecture</h3>
+      <p>Exploring the unsolved mystery of infinitely many twin primes.</p>
+      <a href="https://simple.wikipedia.org/wiki/Twin_prime_conjecture" target="_blank" class="proj-link">Learn more →</a>
+    </div>
+    <div class="project-card">
+      <div class="project-tag">Astrophysics</div>
+      <h3>Hubble Tension</h3>
+      <p>Investigating the discrepancy in measurements of the universe's expansion rate.</p>
+      <a href="https://cerncourier.com/a/the-hubble-tension/" target="_blank" class="proj-link">Learn more →</a>
+    </div>
+    <div class="project-card">
+      <div class="project-tag">Physics</div>
+      <h3>Theory of Everything</h3>
+      <p>A quest to unify all fundamental forces of nature into one elegant framework.</p>
+      <a href="https://en.wikipedia.org/wiki/Theory_of_relativity" target="_blank" class="proj-link">Learn more →</a>
+    </div>
+    <div class="project-card">
+      <div class="project-tag">Machine Learning</div>
+      <h3>Hogwarts Sorting Hat</h3>
+      <p>A fun ML model that sorts Hogwarts students into houses — built on Kaggle.</p>
+      <a href="https://www.kaggle.com/code/abshafi2021/new-sorting-hat" target="_blank" class="proj-link">Learn more →</a>
+    </div>
+  </div>
+</section>
+
+<section id="blogs" class="blogs-section reveal">
+  <div class="section-label">// updates & writes</div>
+  <h2 class="section-title">Blogs & Updates</h2>
+  <p class="section-sub">Click to download the .txt files.</p>
+  <div class="blogs-grid">
+    <div class="blog-card">
+      <div class="blog-num">01</div>
+      <h3>1st Update for My Site</h3>
+      <p>Added a blog section, updates, and fixed typos. First milestone!</p>
+      <a href="blogs/1st_update.txt" download class="btn-download">↓ Download (.txt)</a>
+    </div>
+    <div class="blog-card">
+      <div class="blog-num">02</div>
+      <h3>Basics of Regression Problems</h3>
+      <p>My best notebook for house price prediction using XGBoost and feature engineering.</p>
+      <a href="blogs/regression_code.txt" download class="btn-download">↓ Download (.txt)</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section reveal">
+  <div class="glass contact-glass">
+    <div class="section-label">// get in touch</div>
+    <h2>Contact Me</h2>
+    <p class="section-sub">Got a problem to solve? A project to collaborate on? Reach out!</p>
+    <div class="contact-links">
+      <a href="mailto:abshafi2021@gmail.com" class="contact-item">
+        <span class="contact-icon">✉️</span>
+        <span>abshafi2021@gmail.com</span>
+      </a>
+      <div class="contact-item">
+        <span class="contact-icon">💬</span>
+        <span>Discord: @shafi_2014</span>
+      </div>
+      <a href="https://www.kaggle.com/abshafi2021" target="_blank" class="contact-item">
+        <span class="contact-icon">📊</span>
+        <span>Kaggle: abshafi2021</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Built by <strong>Abdullah Shafi Bin Nahid</strong> · Bangladesh 🇧🇩</p>
+  <p class="footer-sub">Designed with curiosity & code.</p>
+</footer>
+
+<script src="script1.js"></script>
+</body>
+</html>
